@@ -1,18 +1,44 @@
-import type { AppProps } from "next/app";
-import { ThirdwebProvider } from "@thirdweb-dev/react";
-import "../styles/globals.css";
+import type { NextPage } from "next";
+import Image from "next/image";
+import { useRouter } from "next/router";
+import styles from "../styles/Home.module.css";
 
-// This is the chain your dApp will work on.
-// Change this to the chain your app is built for.
-// You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
-const activeChain = "ethereum";
+const Home: NextPage = () => {
+  const router = useRouter();
 
-function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider activeChain={activeChain}>
-      <Component {...pageProps} />
-    </ThirdwebProvider>
-  );
-}
+    <div className={styles.container}>
+      {/* Top Section */}
+      <h1 className={styles.h1}>NFTEarth Staking Rewards</h1>
+      <div className={styles.nftBoxGrid}>
+        <div
+          className={styles.optionSelectBox}
+          role="button"
+          onClick={() => router.push(`/mint`)}
+        >
+          {/* Mint a new NFT */}
+          <Image src="/icons/drop.svg" alt="drop" width={64} height={64} />
+          <h2 className={styles.selectBoxTitle}>Need an Earthling? Mint one here.</h2>
+          <p className={styles.selectBoxDescription}>
+            Mint an Earthling here.
+          </p>
+        </div>
 
-export default MyApp;
+        <div
+          className={styles.optionSelectBox}
+          role="button"
+          onClick={() => router.push(`/stake`)}
+        >
+          {/* Staking an NFT */}
+          <Image src="/icons/token.svg" alt="token" width={64} height={64} />
+          <h2 className={styles.selectBoxTitle}>Stake Your Earthling NFT</h2>
+          <p className={styles.selectBoxDescription}>
+            Stake your Earthling NFT for juicy NFTE rewards to enjoy the start of NFTFi summer on Arbitrum.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
