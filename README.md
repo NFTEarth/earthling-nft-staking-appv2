@@ -15,6 +15,6 @@ This app is for holders of the Earthling NFT to be eligible to stake and earn $N
 
 ## Join our community!
 
-For any questions, suggestions, join our Discord community at [https://discord.gg/nftearth](https://discord.gg/nftearth).
+Join our Discord community at [https://discord.gg/nftearth](https://discord.gg/nftearth).
 
 Follow us on Twitter: [Twitter](https:/twitter.com/NFTEarth_L2)
