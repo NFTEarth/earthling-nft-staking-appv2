@@ -9,7 +9,7 @@ URL: https://stake.nftearth.exchange/
 
 This app is for holders of the Earthling NFT to be eligible to stake and earn $NFTE tokens as part of the Staking Rewards program. 
 
-![image](https://github.com/NFTEarth/nftearth-nft-staking/assets/29180454/c04a7cd3-7158-482e-a860-d2cd83a46fb0)
+![image](https://github.com/westonnelson/nft-staking-appv2/assets/29180454/7ad7f4ee-cdd9-474f-bb05-d2677c80280e)
 
 
 
