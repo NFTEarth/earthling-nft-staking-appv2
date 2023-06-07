@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       {/* Top Section */}
-      <h1 className={styles.h1}>NFTEarth Staking Rewards</h1>
+      <h1 className={styles.h1}>NFTEarth Staking Rewards Program</h1>
       <div className={styles.nftBoxGrid}>
         <div
           className={styles.optionSelectBox}
@@ -18,9 +18,9 @@ const Home: NextPage = () => {
         >
           {/* Mint a new NFT */}
           <Image src="/icons/drop.svg" alt="drop" width={128} height={128} />
-          <h2 className={styles.selectBoxTitle}>Need an Earthling? Mint one here.</h2>
+          <h2 className={styles.selectBoxTitle}>Need an Earthling NFT? Click here to open the mint page.</h2>
           <p className={styles.selectBoxDescription}>
-            Mint an Earthling here.
+            Mint an Earthling - HERE
           </p>
         </div>
 
@@ -33,8 +33,9 @@ const Home: NextPage = () => {
           <Image src="/icons/token.svg" alt="token" width={128} height={128} />
           <h2 className={styles.selectBoxTitle}>Stake Your Earthling NFT</h2>
           <p className={styles.selectBoxDescription}>
-            Stake your Earthling NFT for juicy NFTE rewards to enjoy the start of NFTFi summer on Arbitrum.
+            Stake your Earthling NFT for juicy NFTE rewards to enjoy the start of NFTFi summer on Arbitrum Layer2 network.
           </p>
+          
         </div>
       </div>
     </div>
